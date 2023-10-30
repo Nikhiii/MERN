@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.activity-form {
+    margin: 20px;
+    text-align: center;
+}
+
+.activity-form label {
+    display: inline-block; 
+    margin-bottom: 5px;
+    width: 30%; 
+    text-align: right; 
+}
+
+.activity-form input {
+    display: inline-block;
+    width: 64%; 
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.activity-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+li {
+    background-color: #f2f2f2;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.activity-list h2 {
+    margin-top: 0;
+}
+
+.calories-burnt, .health-status {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.calories-burnt h2, .health-status h2 {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.calories-burnt p, .health-status p {
+    padding: 10px;
+    margin: 0;
+}
+
+#health {
+    display: flex;
+    justify-content: space-between;
+}
+
+#health-status-text, #calories-burnt{
+    color: #3498db;
+    font-size: larger;
+}

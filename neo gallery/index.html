@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>gallery</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div id="card">
+    <h1>The Purest of Doggos</h1>
+    <div id="grid-container">
+      <div id='grid-item-1'>
+        <img  src='./images/pic1.jpg' alt=''>
+        <p>"I'm so happy today!"</p>
+      </div>
+      <div id='grid-item-2'>
+        <img  src='./images/pic2.jpg' alt=''>
+        <p>"I see those nugs."</p>
+      </div>
+      <div id='grid-item-3'>
+        <img  src='./images/pic3.jpg' alt=''>
+        <p>"I love you so much!"</p>
+      </div>
+      <div id='grid-item-4'>
+        <img  src='./images/pic4.jpg' alt=''>
+        <p>"I'm the baby of the house!"</p>
+      </div>
+      <div id='grid-item-5' >
+        <img src='./images/pic5.jpg' alt=''>
+        <p>"Are you gunna throw the ball?"</p>
+      </div>
+      <div id='grid-item-6'>
+        <img  src='./images/pic6.jpg' alt=''>
+        <p>"C'mon friend!"</p>
+      </div>
+      <div id='grid-item-7'>
+        <img  src='./images/pic7.jpg' alt=''>
+        <p>"A rose for mommy!"</p>
+      </div>
+      <div id='grid-item-8'>
+        <img  src='./images/pic8.jpg' alt=''>
+        <p>"You gunna finish that?"</p>
+      </div>
+      <div id='grid-item-9'>
+        <img  src='./images/pic9.jpg' alt=''>
+        <p>"We can't afford a cat!"</p>
+      </div>
+      <div id='grid-item-10'>
+        <img  src='./images/pic10.jpg' alt=''>
+        <p>"Dis my fren!"</p>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const gridItems = document.querySelectorAll('#grid-container div');
+
+      gridItems.forEach((item) => {
+        const text = item.querySelector('p');
+        text.style.display = 'none';
+
+        item.addEventListener('click', () => {
+          text.style.display = text.style.display === 'none' ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
